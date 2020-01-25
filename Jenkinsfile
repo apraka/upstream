@@ -4,8 +4,10 @@ pipeline {
 
     stages {
         stage('SCM Checkout'){
-          git 'https://github.com/apraka/upstream'
-        }
+            steps{  
+              git 'https://github.com/apraka/upstream'
+             }
+        }  
         stage ('Compile Stage') {
           steps {
                 echo 'Compile stage'
