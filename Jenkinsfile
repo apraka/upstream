@@ -17,6 +17,11 @@ pipeline {
           steps {
                 echo 'testing'
             }
-       }     
+       } 
+      post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+    }
 }
 }
